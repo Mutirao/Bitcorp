@@ -14,6 +14,9 @@ lib
 local
 ## django files to ignore
 ## other to ignore
+wsgi/bitcorp/companies/migrations
+wsgi/bitcorp/entrepreneurs/migrations
 wsgi/bitcorp/bitcorp/settings.py
+wsgi/bitcorp/db.sqlite3
 notas
 banco_prueba.py

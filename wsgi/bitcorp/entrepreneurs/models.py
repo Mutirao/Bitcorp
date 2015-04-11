@@ -7,7 +7,8 @@ class entrepreneur(models.Model):
     lastname = models.TextField(max_length=100)
     photo = models.ImageField(upload_to='photos')
     url_id = models.TextField(max_length=200)
-    register_date = models.DateTimeField(now)
+    register_date = models.DateTimeField(auto_now=True,
+                                         auto_now_add=True)
 
     def __unicode__(self):
         return '{:} {:}'.format(self.name, self.lastname)
